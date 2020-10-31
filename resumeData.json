@@ -12,7 +12,7 @@
       "state":"United Kingdom"
     },
     "website": "http://sebastjancizel.github.io",
-    "resumedownload":"http://sebastjancizel.github.io",
+    "resumedownload":"https://www.dropbox.com/s/3gfjzm8gxsvg2xg/Resume_CizelSebastjan.pdf?dl=0",
     "social":[
       {
         "name":"mail",
@@ -76,11 +76,11 @@
       {
         "title":"Programming",
         "list": "Python, F#, JavaScript (proficient); R, C++, Mathematica, Matlab (intermediate)",
-        "description": ""
+        "description": "I have 5 years experience with Python programming including object oriented programming. From my ongoing work with Sledilnik I have experience with functional programming in F# and JavaScript. "
       },
       {
         "title":"Data analytics",
-        "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R)",
+        "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R); Highcharts (JavaScript)",
         "description": ""
       },
       {
@@ -91,7 +91,7 @@
     ]
   },
   "research":{
-    "description":"My research lies at the interface of geometry and theoretical physics. I am interested in understanding classes of geometric objects that arise naturally in different corners of string theory.\n\n String theory has, over the past few decades, been a curious venue for a profound interaction between mathematics and physics. The efforts to formulate a fundamental quantum theory of gravity have led several branches of pure mathematics to make an appearance in physics. Most notably, geometry in its various forms has started to take on a prominent role. This was not its first appearance. Since the theory of general relativity, it has become clear that there is an inherent geometry underlying the physics of gravity. However, string theorists went beyond the 4 dimensions of space and time and started thinking about increasingly intricate higher dimensional objects.\n\n This is the basis of my research. I am interested in geometric objects — higher-dimensional shapes — that appear in string theory and how their properties manifest in the physical theories they are associated with. Usually with opaque names like G2 manifolds or GK geometries, these shapes are often of independent mathematical interest. What makes them especially exciting is the fruitful interplay of mathematics and physics that is present. Mathematics provides the foundation for physical theories, whereas physical arguments and intuition guide the mathematical explorations.",
+    "description":"My research lies at the interface of geometry and theoretical physics. I am interested in understanding classes of geometric objects that arise naturally in different corners of string theory.<br> String theory has, over the past few decades, been a curious venue for a profound interaction between mathematics and physics. The efforts to formulate a fundamental quantum theory of gravity have led several branches of pure mathematics to make an appearance in physics. Most notably, geometry in its various forms has started to take on a prominent role. This was not its first appearance. Since the theory of general relativity, it has become clear that there is an inherent geometry underlying the physics of gravity. However, string theorists went beyond the 4 dimensions of space and time and started thinking about increasingly intricate higher dimensional objects.<br> This is the basis of my research. I am interested in geometric objects — higher-dimensional shapes — that appear in string theory and how their properties manifest in the physical theories they are associated with. Usually with opaque names like G<sub>2</sub> manifolds or GK geometries, these shapes are often of independent mathematical interest. What makes them especially exciting is the fruitful interplay of mathematics and physics that is present. Mathematics provides the foundation for physical theories, whereas physical arguments and intuition guide the mathematical explorations.",
     "papers":[
       {
         "title":"I/c-extremization in M/F-duality",
@@ -104,52 +104,6 @@
         "journal":"<a href='https://link.springer.com/article/10.1007/JHEP03(2019)199'>JHEP 2019, 199 (2019)</a>",
         "collaborators":"Andreas Braun, Max Hubner, Sakura Schafer-Nameki",
         "abstract": ""
-      }
-    ]
-  },
-  "portfolio":{
-    "projects": [
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
-      }
-    ]
-  },
-  "testimonials":{
-    "testimonials":[
-      {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
-      },
-      {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
       }
     ]
   }
