@@ -7,7 +7,7 @@ class Research extends Component {
     if (this.props.data) {
       var description = ReactHtmlParser(this.props.data.description);
       var papers = this.props.data.papers.map(function (papers) {
-        return <div key={papers.title}><h3>{ReactHtmlParser(papers.title)}</h3>
+        return <div key={papers.title}><h5>{ReactHtmlParser(papers.title)}</h5>
           <p className="info">{ReactHtmlParser(papers.journal)} <span>&bull; </span><em className="date">Joint with {papers.collaborators}</em></p>
           <p>{papers.abstract}</p></div>
       })
@@ -23,6 +23,7 @@ class Research extends Component {
 
           <div className="nine columns main-col">
             <p>{description}</p>
+            <h3>Publications</h3>
             <div className="row item">
               <div className="twelve columns">
                 {papers}
