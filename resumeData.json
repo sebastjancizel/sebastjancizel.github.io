@@ -1,56 +1,38 @@
 {
   "main": {
-    "name":"Tim Baker",
-    "occupation":"(Your Occupation Here)",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "name":"Sebastjan Cizel",
+    "occupation":"research student in mathematical physics",
+    "description":"",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"I am a research student in mathematical physics at Magdalen College, University of Oxford. When I'm not working on math and physics I like to think about various things related to machine learning and, in particular, looking for interesting applications of geometry in artificial intelligence and data science.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"Magdalen College",
+      "city":"Oxford",
+      "state":"United Kingdom"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "http://sebastjancizel.github.io",
+    "resumedownload":"http://sebastjancizel.github.io",
     "social":[
       {
-        "name":"facebook",
-        "url":"http://facebook.com/tim.baker.906",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
-        "name":"google-plus",
-        "url":"http://googleplus.com/tbakerx",
-        "className":"fa fa-google-plus"
+        "name":"mail",
+        "url":"mailto:sebastjancizel@gmail.com",
+        "className":"fa fa-envelope"
       },
       {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/sebastjan-cizel",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"http://github.com/tbakerx",
+        "url":"http://github.com/sebastjancizel",
         "className":"fa fa-github"
       },
       {
-        "name":"skype",
-        "url":"http://skype.com",
-        "className":"fa fa-skype"
+        "name":"kaggle",
+        "url":"http://kaggle.com",
+        "className":"fab fa-kaggle"
       }
     ]
   },
@@ -58,60 +40,70 @@
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Oxford",
+        "degree":"DPhil in Mathematics",
+        "graduated":"October 2017 - September 2021",
+        "description":""
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Imperial College London",
+        "degree":"MSc in Pure Mathematics",
+        "graduated":"October 2016 - September 2017",
+        "description":""
+      },
+      {
+        "school":"University of Ljubljana",
+        "degree":"BSc in Mathematics",
+        "graduated":"October 2013 - September 2016",
+        "description":""
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Sledilnik COVID19 Tracker",
+        "title":"Contributor (data visualizations)",
+        "years":"September 2020 - Present",
+        "description":"<a href='https://covid-19.sledilnik.org/en/team'>Sledilnik</a> is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I am contributing to the visualizations of the data gathered by the community. The work involves parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API. "
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"University of Oxford",
+        "title":"Tutorial teaching",
+        "years":"January 2018 - Present",
+        "description":"From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my <a href='https://www.linkedin.com/in/sebastjan-cizel/'>LinkedIn page.</a>"
       }
     ],
     "skills":[
       {
-        "name":"Git",
-        "level":"60%"
+        "title":"Programming",
+        "list": "Python, F#, JavaScript (proficient); R, C++, Mathematica, Matlab (intermediate)",
+        "description": ""
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "title":"Data analytics",
+        "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R)",
+        "description": ""
       },
       {
-        "name":"ReactJs",
-        "level":"50%"
+        "title":"Machine Learning",
+        "list": "Tensorflow, Scikit Learn",
+        "description": ""
+      }
+    ]
+  },
+  "research":{
+    "description":"My research lies at the interface of geometry and theoretical physics. I am interested in understanding classes of geometric objects that arise naturally in different corners of string theory.\n\n String theory has, over the past few decades, been a curious venue for a profound interaction between mathematics and physics. The efforts to formulate a fundamental quantum theory of gravity have led several branches of pure mathematics to make an appearance in physics. Most notably, geometry in its various forms has started to take on a prominent role. This was not its first appearance. Since the theory of general relativity, it has become clear that there is an inherent geometry underlying the physics of gravity. However, string theorists went beyond the 4 dimensions of space and time and started thinking about increasingly intricate higher dimensional objects.\n\n This is the basis of my research. I am interested in geometric objects — higher-dimensional shapes — that appear in string theory and how their properties manifest in the physical theories they are associated with. Usually with opaque names like G2 manifolds or GK geometries, these shapes are often of independent mathematical interest. What makes them especially exciting is the fruitful interplay of mathematics and physics that is present. Mathematics provides the foundation for physical theories, whereas physical arguments and intuition guide the mathematical explorations.",
+    "papers":[
+      {
+        "title":"I/c-extremization in M/F-duality",
+        "journal":"<a href='https://scipost.org/SciPostPhys.9.3.029'>SciPostPhys.9.3.029</a>",
+        "collaborators":"Marieke van Beest, Sakura Schafer-Nameki, James Sparks",
+        "abstract": ""
       },
       {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"VueJs",
-        "level":"50%"
-      },
-      {
-        "name":"MongoDB",
-        "level":"80%"
+        "title":"Higgs Bundles for M-theory on G<sub>2</sub>-manifolds",
+        "journal":"<a href='https://link.springer.com/article/10.1007/JHEP03(2019)199'>JHEP 2019, 199 (2019)</a>",
+        "collaborators":"Andreas Braun, Max Hubner, Sakura Schafer-Nameki",
+        "abstract": ""
       }
     ]
   },
