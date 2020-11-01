@@ -75,11 +75,11 @@
     "skills":[
       {
         "title":"Programming",
-        "list": "Python, F#, JavaScript (proficient); R, C++, Mathematica, Matlab (intermediate)",
+        "list": "Python, F#, JavaScript, R, C++, Mathematica, Matlab",
         "description": "I have 5 years experience with Python programming including object oriented programming. From my ongoing work with Sledilnik I have experience with functional programming in F# and JavaScript. "
       },
       {
-        "title":"Data analytics",
+        "title":"Data Analytics",
         "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R); Highcharts (JavaScript)",
         "description": ""
       },
