@@ -63,13 +63,15 @@
         "company":"Sledilnik COVID19 Tracker",
         "title":"Contributor (data visualizations)",
         "years":"September 2020 - Present",
-        "description":"<a href='https://covid-19.sledilnik.org/en/team'>Sledilnik</a> is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I am contributing to the visualizations of the data gathered by the community. The work involves parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API. "
+        "description":"<a href='https://covid-19.sledilnik.org/en/team'>Sledilnik</a> is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I am contributing to the visualizations of the data gathered by the community. The work involves parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API. ",
+        "image": "sledilnik.jpg"
       },
       {
         "company":"University of Oxford",
         "title":"Tutorial teaching",
         "years":"January 2018 - Present",
-        "description":"From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my <a href='https://www.linkedin.com/in/sebastjan-cizel/'>LinkedIn page.</a>"
+        "description":"From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my <a href='https://www.linkedin.com/in/sebastjan-cizel/'>LinkedIn page.</a>",
+        "image": "oxford-logo.jpg"
       }
     ],
     "skills":[
