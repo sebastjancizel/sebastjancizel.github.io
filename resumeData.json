@@ -108,5 +108,15 @@
         "abstract": ""
       }
     ]
+  },
+  "portfolio":{
+    "projects": [
+      {
+        "title":"NYC Taxi Data Dashboard",
+        "category":"Dashboard I made visualizing 120 million taxi rides.",
+        "image":"nyc-taxi.jpg",
+        "url":"https://nyc-taxi-dashboard.herokuapp.com/"
+      }
+    ]
   }
 }

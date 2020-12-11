@@ -329,8 +329,9 @@ ul#nav li.current a {
 .education,
 .work,
 .skills {
-   margin-bottom: 48px;
+   /* margin-bottom: 48px; */
    padding-bottom: 24px;
+   padding-top: 36px;
    border-bottom: 1px solid #E8E8E8;
 }
 
@@ -527,8 +528,9 @@ ul#nav li.current a {
 #research {
    background: #fff;
    padding-top: 0px;
-   padding-bottom: 72px;
+   padding-bottom: 0px;
    overflow: hidden;
+   margin-bottom: 0px;
 }
 
 #research a,
@@ -564,13 +566,6 @@ ul#nav li.current a {
    padding-right: 10%;
 }
 
-.education,
-.work,
-.skills {
-   margin-bottom: 48px;
-   padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
-}
 
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
