@@ -42,18 +42,21 @@
       {
         "school":"University of Oxford",
         "degree":"DPhil in Mathematics",
+        "image": "oxford-logo.jpg",
         "graduated":"October 2017 - September 2021",
         "description":""
       },
       {
         "school":"Imperial College London",
         "degree":"MSc in Pure Mathematics",
+        "image": "icl-logo.jpg",
         "graduated":"October 2016 - September 2017",
         "description":""
       },
       {
         "school":"University of Ljubljana",
         "degree":"BSc in Mathematics",
+        "image": "unilj-logo.jpg",
         "graduated":"October 2013 - September 2016",
         "description":""
       }
