@@ -20,7 +20,7 @@ class Footer extends Component {
 
            <ul className="copyright">
               <li>Photo by Zac Ong on <a href="https://unsplash.com/photos/JHN1-mpgXjo">Unsplash</a></li>
-              <li>Based on a React template by Tim Baker</li>
+              <li>Based on a <a href="https://github.com/tbakerx/react-resume-template">React template by Tim Baker</a></li>
               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
            </ul>
 
