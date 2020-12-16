@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 // import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import ParticlesBg from 'particles-bg'
+
 
 class Header extends Component {
   render() {
@@ -27,7 +29,7 @@ class Header extends Component {
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
 	         <li><a className="smoothscroll" href="#research">Research</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
          </ul>
 
       </nav>
@@ -48,6 +50,8 @@ class Header extends Component {
       <p className="scrolldown">
          <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
       </p>
+
+      <ParticlesBg color="#ffffff" num={200} type="cobweb" bg={true} />
 
    </header>
     );
