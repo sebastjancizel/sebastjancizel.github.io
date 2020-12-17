@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 // import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import ParticlesBg from 'particles-bg'
-
+import ParticlesBg from 'particles-bg';
+import MediaQuery from 'react-responsive';
 
 class Header extends Component {
   render() {
@@ -50,8 +50,12 @@ class Header extends Component {
       <p className="scrolldown">
          <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
       </p>
-
-      <ParticlesBg color="#ffffff" num={200} type="cobweb" bg={true} />
+      <MediaQuery minWidth={767}>
+      <ParticlesBg color="#ffffff" num={150} type="cobweb" bg={true} />
+      </MediaQuery>
+      <MediaQuery maxWidth={767}>
+      <ParticlesBg color="#ffffff" num={30} type="cobweb" bg={true} />
+      </MediaQuery>
 
    </header>
     );
