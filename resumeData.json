@@ -28,11 +28,6 @@
         "name":"github",
         "url":"http://github.com/sebastjancizel",
         "className":"fa fa-github"
-      },
-      {
-        "name":"kaggle",
-        "url":"http://kaggle.com",
-        "className":"fab fa-kaggle"
       }
     ]
   },
@@ -85,7 +80,7 @@
       },
       {
         "title":"Data Analytics",
-        "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R); Highcharts (JavaScript)",
+        "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R); Highcharts (JavaScript); SQL",
         "description": ""
       },
       {
