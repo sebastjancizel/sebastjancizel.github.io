@@ -4,7 +4,7 @@
     "occupation":"research student in mathematical physics",
     "description":"",
     "image":"profilepic.jpg",
-    "bio":"I am a research student in mathematical physics at Magdalen College, University of Oxford. When I'm not working on math and physics I like to think about various things related to machine learning and, in particular, looking for interesting applications of geometry in artificial intelligence and data science.",
+    "bio":"Research scientist with expertise in machine learning, probability, and programming, currently working in computer vision, researching neural network based image and video compression algorithms.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "address":{
       "street":"Magdalen College",
@@ -12,7 +12,7 @@
       "state":"United Kingdom"
     },
     "website": "http://sebastjancizel.github.io",
-    "resumedownload":"https://www.dropbox.com/s/6d02rgp0ikuq5vb/Resume_CizelSebastjan.pdf?dl=0",
+    "resumedownload":"https://www.dropbox.com/s/humefrhq1zvujay/Resume_CizelSebastjan.pdf?dl=0",
     "social":[
       {
         "name":"mail",
@@ -58,15 +58,22 @@
     ],
     "work":[
       {
+        "company":"Deep Render",
+        "title":"Research Scientist",
+        "years":"September 2021 - Present",
+        "description":"",
+        "image": "dr.jpeg"
+      },
+      {
         "company":"Sledilnik COVID19 Tracker",
         "title":"Contributor (data visualizations)",
-        "years":"September 2020 - Present",
+        "years":"September 2020 - May 2021",
         "description":"<a href='https://covid-19.sledilnik.org/en/team'>Sledilnik</a> is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I am contributing to the visualizations of the data gathered by the community. The work involves parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API. ",
         "image": "sledilnik.jpg"
       },
       {
         "company":"University of Oxford",
-        "title":"Tutorial teaching",
+        "title":"Tutorial Teacher",
         "years":"January 2018 - Present",
         "description":"From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my <a href='https://www.linkedin.com/in/sebastjan-cizel/'>LinkedIn page.</a>",
         "image": "oxford-logo.jpg"
@@ -74,9 +81,9 @@
     ],
     "skills":[
       {
-        "title":"Programming",
-        "list": "Python, F#, JavaScript, R, C++, Mathematica, Matlab",
-        "description": "I have 5 years experience with Python programming including object oriented programming. From my ongoing work with Sledilnik I have experience with functional programming in F# and JavaScript. "
+        "title":"Probability and Statistics",
+        "list": "",
+        "description": "Highly proficient in mathematics, probability theory, and statistics, with a particular interest in generative density models."
       },
       {
         "title":"Data Analytics",
@@ -85,8 +92,8 @@
       },
       {
         "title":"Machine Learning",
-        "list": "Tensorflow, Scikit Learn",
-        "description": ""
+        "list": "Pytorch, Numpy, TensorFlow, scikit-learn",
+        "description": "In-depth understanding of the latest deep learning and optimization literature with a particular focus in computer vision. Highly proficient in designing and executing experiments using the Python deep learning stack (Numpy, Pytorch, TensorFlow, scikit- learn, Weights and Biases)."
       }
     ]
   },
