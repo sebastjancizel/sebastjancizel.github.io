@@ -29,7 +29,7 @@ class Header extends Component {
                   <li><a className="smoothscroll" href="#about">About</a></li>
                   <li><a className="smoothscroll" href="#resume">Resume</a></li>
                   <li><a className="smoothscroll" href="#research">Research</a></li>
-                  <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
+                  {/* <li><a className="smoothscroll" href="#portfolio">Projects</a></li> */}
                </ul>
 
             </nav>
@@ -37,8 +37,8 @@ class Header extends Component {
             <div className="row banner">
                <div className="banner-text">
                   <h1 className="responsive-headline">I'm Sebastjan Cizel.</h1>
-                  <h3>I'm a <span> research student in mathematical physics</span> at the <span>University of Oxford</span>,
-                with an interest in <span>machine learning</span>, <span>data science</span> and <span>finance</span>.
+                  <h3>I'm a <span>machine learning research scientist</span> at with a <span>PhD in Mathematics</span>,
+                with an interest in <span>deep learning</span>, <span>software engineering</span> and <span>finance</span>.
             </h3>
                   <hr />
                   <ul className="social">

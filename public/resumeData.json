@@ -4,7 +4,7 @@
     "occupation":"research student in mathematical physics",
     "description":"",
     "image":"profilepic.jpg",
-    "bio":"I am a research student in mathematical physics at Magdalen College, University of Oxford. When I'm not working on math and physics I like to think about various things related to machine learning and, in particular, looking for interesting applications of geometry in artificial intelligence and data science.",
+    "bio":"Research scientist with expertise in machine learning, probability, and programming, currently working in computer vision, researching neural network based image and video compression algorithms.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "address":{
       "street":"Magdalen College",
@@ -12,7 +12,7 @@
       "state":"United Kingdom"
     },
     "website": "http://sebastjancizel.github.io",
-    "resumedownload":"https://www.dropbox.com/s/6d02rgp0ikuq5vb/Resume_CizelSebastjan.pdf?dl=0",
+    "resumedownload":"https://www.dropbox.com/s/humefrhq1zvujay/Resume_CizelSebastjan.pdf?dl=0",
     "social":[
       {
         "name":"mail",
@@ -58,15 +58,22 @@
     ],
     "work":[
       {
+        "company":"Deep Render",
+        "title":"Research Scientist",
+        "years":"September 2021 - Present",
+        "description":"Developing, implementing, and applying state of the art computer vision algorithms and probabilistic models to the problem of image and video compression.",
+        "image": "dr.jpeg"
+      },
+      {
         "company":"Sledilnik COVID19 Tracker",
         "title":"Contributor (data visualizations)",
-        "years":"September 2020 - Present",
-        "description":"<a href='https://covid-19.sledilnik.org/en/team'>Sledilnik</a> is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I am contributing to the visualizations of the data gathered by the community. The work involves parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API. ",
+        "years":"September 2020 - May 2021",
+        "description":"<a href='https://covid-19.sledilnik.org/en/team'>Sledilnik</a> is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I contributed to the visualizations of the data gathered by the community. The work involved parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API. ",
         "image": "sledilnik.jpg"
       },
       {
         "company":"University of Oxford",
-        "title":"Tutorial teaching",
+        "title":"Tutorial Teacher",
         "years":"January 2018 - Present",
         "description":"From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my <a href='https://www.linkedin.com/in/sebastjan-cizel/'>LinkedIn page.</a>",
         "image": "oxford-logo.jpg"
@@ -74,24 +81,24 @@
     ],
     "skills":[
       {
-        "title":"Programming",
-        "list": "Python, F#, JavaScript, R, C++, Mathematica, Matlab",
-        "description": "I have 5 years experience with Python programming including object oriented programming. From my ongoing work with Sledilnik I have experience with functional programming in F# and JavaScript. "
+        "title":"Probability and Statistics",
+        "list": "",
+        "description": "Highly proficient in mathematics, probability theory, and statistics, with a particular interest in generative density models."
       },
       {
-        "title":"Data Analytics",
-        "list": "Pandas, Numpy, Matplotlib, Plotly (Python); Tidyverse, ggplot2 (R); Highcharts (JavaScript); SQL",
-        "description": ""
+        "title":"Programming",
+        "list": "Python (advanced); C++, Java, F# (working knowledge)",
+        "description": "Very proficient in Python with 8 years of experience using the language and the standard machine learning and deep learning libraries. I have a working knowledge in several other languages including C++ (used for developing custom Torch extensions), F# (used with in my work for Sledilnik), and Java (used in <a href='https://github.com/sebastjancizel/jlox'>a personal project</a>)."
       },
       {
         "title":"Machine Learning",
-        "list": "Tensorflow, Scikit Learn",
-        "description": ""
+        "list": "Pytorch, Numpy, TensorFlow, Pandas, scikit-learn, Weights and Biases",
+        "description": "In-depth understanding of the latest deep learning and optimization literature with a particular focus in computer vision. Highly proficient in designing and executing experiments using the Python deep learning stack (Numpy, Pytorch, TensorFlow, scikit- learn, Weights and Biases)."
       }
     ]
   },
   "research":{
-    "description":"My research lies at the interface of geometry and theoretical physics. I am interested in understanding classes of geometric objects that arise naturally in different corners of string theory.<br> String theory has, over the past few decades, been a curious venue for a profound interaction between mathematics and physics. The efforts to formulate a fundamental quantum theory of gravity have led several branches of pure mathematics to make an appearance in physics. Most notably, geometry in its various forms has started to take on a prominent role. This was not its first appearance. Since the theory of general relativity, it has become clear that there is an inherent geometry underlying the physics of gravity. However, string theorists went beyond the 4 dimensions of space and time and started thinking about increasingly intricate higher dimensional objects.<br> This is the basis of my research. I am interested in geometric objects — higher-dimensional shapes — that appear in string theory and how their properties manifest in the physical theories they are associated with. Usually with opaque names like G<sub>2</sub> manifolds or GK geometries, these shapes are often of independent mathematical interest. What makes them especially exciting is the fruitful interplay of mathematics and physics that is present. Mathematics provides the foundation for physical theories, whereas physical arguments and intuition guide the mathematical explorations.",
+    "description":"Before venturing over to deep learning I did a PhD in Mathematics, focusing on the intersection of geometry and string theory. Here as a quick description of the things I was researching: <br> String theory has, over the past few decades, been a curious venue for a profound interaction between mathematics and physics. The efforts to formulate a fundamental quantum theory of gravity have led several branches of pure mathematics to make an appearance in physics. Most notably, geometry in its various forms has started to take on a prominent role. This was not its first appearance. Since the theory of general relativity, it has become clear that there is an inherent geometry underlying the physics of gravity. However, string theorists went beyond the 4 dimensions of space and time and started thinking about increasingly intricate higher dimensional objects.<br> This is what my research was about; the geometric objects — higher-dimensional shapes — that appear in string theory and how their properties manifest in the physical theories they are associated with. Usually with opaque names like G<sub>2</sub> manifolds or GK geometries, these shapes are often of independent mathematical interest. What makes them especially exciting is the fruitful interplay of mathematics and physics that is present. Mathematics provides the foundation for physical theories, whereas physical arguments and intuition guide the mathematical explorations.",
     "papers":[
       {
         "title":"I/c-extremization in M/F-duality",
