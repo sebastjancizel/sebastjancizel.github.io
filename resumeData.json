@@ -61,7 +61,7 @@
         "company":"Deep Render",
         "title":"Research Scientist",
         "years":"September 2021 - Present",
-        "description":"Developing, implementing, and applying state of the art computer vision algorithms and probabilistic models to the problem of image and video compression.",
+        "description":"Deep Render is a start-up focusing on developing a perceptually optimized image and video compression algorithms based on AI. My day to day work consists of developing and testing new approaches and improvements to the video compression algorithm with the aim of optimizing both the compression and runtime performance on mobile platforms. I also maintain the codebase for a core video compression algorithm. The tech stack consists of Pytorch with Weighs and Biases for experiment tracking.",
         "image": "dr.jpeg"
       },
       {
