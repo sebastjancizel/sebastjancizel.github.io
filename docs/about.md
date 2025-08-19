@@ -2,15 +2,27 @@
 
 ## Professional Experience
 
-### Deep Render - Research Scientist
+### Deep Render - Head of Engineering
 
-_September 2021 - Present_
+_October 2023 - Present_
 
 <div style="float: right; margin-left: 20px; margin-bottom: 10px;">
   <img src="../assets/images/dr.jpeg" alt="Deep Render" style="width: 100px; border-radius: 8px;">
 </div>
 
-Deep Render is a start-up focusing on developing a perceptually optimized image and video compression algorithms based on AI. My day to day work consists of developing and testing new approaches and improvements to the video compression algorithm with the aim of optimizing both the compression and runtime performance on mobile platforms. I also maintain the codebase for a core video compression algorithm. The tech stack consists of Pytorch with Weighs and Biases for experiment tracking.
+Technical lead and manager of 15 engineers responsible for productization of research models and internal hardware/software infrastructure. Built unified model inference library for major AI accelerators (Nvidia, Apple, Qualcomm, Intel) and CI/CD system reducing model port times from weeks to days. Spearheading the world's first integration of a neural codec into FFmpeg and VLC achieving realtime video encode and decode on consumer devices.
+
+### Deep Render - Senior Research Scientist
+
+_February 2023 - October 2023_
+
+Led model quantization and pruning research achieving 2x improvements in memory footprint and runtime while retaining compression performance. Delivered client-facing applications and built model evaluation tools using Python and web stack (Vue, node).
+
+### Deep Render - Research Scientist
+
+_September 2021 - February 2023_
+
+Made foundational research contributions to video compression models with >10% efficiency gains over state-of-the-art. Lead maintainer of core model codebase (PyTorch, C++, CUDA) with 60k+ lines of contributions, focusing on generative CV models and optical flow.
 
 ### Sledilnik COVID19 Tracker - Contributor
 
@@ -22,15 +34,20 @@ _September 2020 - May 2021_
 
 [Sledilnik](https://covid-19.sledilnik.org/en/team) is an open source community engaged in a comprehensive effort of track COVID19 cases in Slovenia. I contributed to the visualizations of the data gathered by the community. The work involved parsing and cleaning the data using the backend written in F# and creating visualizations using the Highcharts API.
 
-### University of Oxford - Tutorial Teacher
+## Patents
 
-_January 2018 - Present_
+### US Patents Granted
 
-<div style="float: right; margin-left: 20px; margin-bottom: 10px;">
-  <img src="../assets/images/oxford-logo.jpg" alt="Oxford" style="width: 100px; border-radius: 8px;">
-</div>
+**Method and Data Processing System for Lossy Image or Video Encoding**  
+[US Patent 12,113,985](https://patentcenter.uspto.gov/applications/18458511). Issued October 8, 2024.  
+_Motion translations with flow-based processes for AI video compression._
 
-From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my [LinkedIn page](https://www.linkedin.com/in/scizel/).
+**Method and Data Processing System for Lossy Image or Video Encoding**  
+[US Patent 11,936,866](https://patentcenter.uspto.gov/applications/18458497). Issued March 19, 2024.  
+_Motion transformation handling in AI compression processes._
+
+**6 additional patent applications pending review** ([Google Patents](https://patents.google.com/?inventor=sebastjan+cizel&oq=sebastjan+cizel))  
+_Covering advanced neural compression techniques and optimization methods._
 
 ## Education
 
@@ -70,18 +87,19 @@ Undergraduate studies in mathematics with a focus on theoretical foundations.
 
 Highly proficient in mathematics, probability theory, and statistics, with a particular interest in generative density models.
 
+### Deep Learning
+
+Highly proficient in applied generative AI research both in computer vision and applications of LLMs for internal business infrastructure projects.
+
 ### Programming
 
-- **Python** (advanced) - 8 years of experience using the language and the standard machine learning and deep learning libraries
-- **C++** (working knowledge) - Used for developing custom Torch extensions
-- **F#** (working knowledge) - Used in my work for Sledilnik
-- **Java** (working knowledge) - Used in [personal projects](https://github.com/sebastjancizel/jlox)
+**Python** (advanced) - 10+ years in software development, data analysis, and AI research. Expert in PyTorch with deep knowledge of model compilation stack (FX, Inductor, Dynamo, Triton).
 
-### Machine Learning
+**C++** (working knowledge) - contributions to model inference libraries and entropy coders.
 
-**Technologies:** PyTorch, NumPy, TensorFlow, Pandas, scikit-learn, Weights and Biases
+### Other Technologies
 
-In-depth understanding of the latest deep learning and optimization literature with a particular focus in computer vision. Highly proficient in designing and executing experiments using the Python deep learning stack.
+AWS, Unix, git, Github actions, Weights and Biases, Docker, tmux, Vue, GraphQL, Kubernetes
 
 ## Contact Information
 
@@ -89,4 +107,4 @@ In-depth understanding of the latest deep learning and optimization literature w
 - **Email:** [sebastjancizel@gmail.com](mailto:sebastjancizel@gmail.com)
 - **LinkedIn:** [scizel](https://www.linkedin.com/in/scizel/)
 - **GitHub:** [sebastjancizel](https://github.com/sebastjancizel)
-- **CV:** [Download Resume](https://www.dropbox.com/s/humefrhq1zvujay/Resume_CizelSebastjan.pdf?dl=0)
+- **CV:** [Download Resume](assets/Resume_CizelSebastjan.pdf)
