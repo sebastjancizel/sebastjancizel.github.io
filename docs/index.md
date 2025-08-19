@@ -21,32 +21,24 @@ Before venturing into deep learning, I completed a DPhil in Mathematics at the U
 
 ## Quick Links
 
-<div class="grid cards" markdown>
-
-- :material-account-school:{ .lg .middle } **Education**
-
-  ***
-
-  Learn about my academic journey from Ljubljana to Oxford
-
-  [:octicons-arrow-right-24: Education](about.md#education)
-
-- :material-flask:{ .lg .middle } **Research**
-
-  ***
-
-  Explore my research in mathematics and machine learning
-
-  [:octicons-arrow-right-24: Research](research.md)
-
-- :material-rss:{ .lg .middle } **Blog**
-
-  ***
-
-  Read my thoughts on ML, mathematics, and technology
-
-  [:octicons-arrow-right-24: Blog](blog/index.md)
-
+<div class="grid cards">
+  <div class="card">
+    <h3>🎓 Education</h3>
+    <p>Learn about my academic journey from Ljubljana to Oxford</p>
+    <a href="about/#education" class="md-button">Education →</a>
+  </div>
+  
+  <div class="card">
+    <h3>🔬 Research</h3>
+    <p>Explore my research in mathematics and machine learning</p>
+    <a href="research/" class="md-button">Research →</a>
+  </div>
+  
+  <div class="card">
+    <h3>📝 Blog</h3>
+    <p>Read my thoughts on ML, mathematics, and technology</p>
+    <a href="blog/" class="md-button">Blog →</a>
+  </div>
 </div>
 
 ## Get in Touch
@@ -55,10 +47,10 @@ I'm always interested in discussing machine learning, mathematics, and technolog
 
 <div style="text-align: center; margin: 2em 0;">
   <a href="mailto:sebastjancizel@gmail.com" class="md-button md-button--primary">
-    :fontawesome-solid-paper-plane: Contact Me
+    📧 Contact Me
   </a>
   <a href="assets/Resume_CizelSebastjan.pdf" class="md-button">
-    :fontawesome-solid-file-arrow-down: Download CV
+    📄 Download CV
   </a>
 </div>
 
