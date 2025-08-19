@@ -30,7 +30,7 @@ _January 2018 - Present_
   <img src="../assets/images/oxford-logo.jpg" alt="Oxford" style="width: 100px; border-radius: 8px;">
 </div>
 
-From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my [LinkedIn page](https://www.linkedin.com/in/sebastjan-cizel/).
+From my first year as a DPhil student I have been involved in teaching tutorials for various different subjects at the University of Oxford. For a more detailed breakdown of the subjects and the colleges I have taught at, please visit my [LinkedIn page](https://www.linkedin.com/in/scizel/).
 
 ## Education
 
@@ -87,6 +87,6 @@ In-depth understanding of the latest deep learning and optimization literature w
 
 - **Location:** Magdalen College, Oxford, United Kingdom
 - **Email:** [sebastjancizel@gmail.com](mailto:sebastjancizel@gmail.com)
-- **LinkedIn:** [sebastjan-cizel](https://www.linkedin.com/in/sebastjan-cizel)
+- **LinkedIn:** [scizel](https://www.linkedin.com/in/scizel/)
 - **GitHub:** [sebastjancizel](https://github.com/sebastjancizel)
 - **CV:** [Download Resume](https://www.dropbox.com/s/humefrhq1zvujay/Resume_CizelSebastjan.pdf?dl=0)
