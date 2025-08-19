@@ -7,7 +7,7 @@
 **Description:** Dashboard I made visualizing 120 million taxi rides
 
 <div style="text-align: center; margin: 2em 0;">
-  <img src="assets/images/portfolio/nyc-taxi.jpg" alt="NYC Taxi Dashboard" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <img src="../assets/images/portfolio/nyc-taxi.jpg" alt="NYC Taxi Dashboard" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 </div>
 
 An interactive dashboard that processes and visualizes over 120 million NYC taxi ride records. This project demonstrates skills in:
