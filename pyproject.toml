@@ -1,0 +1,28 @@
+[project]
+name = "sebastjan-cizel-website"
+version = "1.0.0"
+description = "Personal website and blog built with Material for MkDocs"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "Sebastjan Cizel", email = "sebastjancizel@gmail.com" },
+]
+
+dependencies = [
+    "mkdocs-material>=9.5.0",
+    "mkdocs-rss-plugin>=1.6.0",
+    "mkdocs-minify-plugin>=0.6.0",
+    "pillow>=10.0.0",
+    "cairosvg>=2.6.0",
+]
+
+[project.urls]
+Homepage = "https://sebastjancizel.github.io"
+Repository = "https://github.com/sebastjancizel/sebastjancizel.github.io"
+
+[tool.uv]
+dev-dependencies = []
+
+# This is an application project, not a library
+package = false
