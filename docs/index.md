@@ -1,7 +1,7 @@
 # Welcome to Sebastjan Cizel's Website
 
 <div style="text-align: center; margin: 2em 0;">
-  <img src="assets/images/profilepic.jpg" alt="Sebastjan Cizel" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+  <img src="assets/images/headshot.webp" alt="Sebastjan Cizel" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
 
 ## About Me
