@@ -15,7 +15,6 @@ copyright: Copyright &copy; 2025 Sebastjan Cizel
 # Configuration
 theme:
   name: material
-  custom_dir: overrides
   features:
     - announce.dismiss
     - content.action.edit
