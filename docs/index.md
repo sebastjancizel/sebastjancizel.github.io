@@ -11,7 +11,7 @@ I'm a research scientist with expertise in **machine learning**, **probability**
 ### Current Position
 
 **Research Scientist** at Deep Render  
-*September 2021 - Present*
+_September 2021 - Present_
 
 Deep Render is a start-up focusing on developing perceptually optimized image and video compression algorithms based on AI. My day-to-day work consists of developing and testing new approaches and improvements to the video compression algorithm with the aim of optimizing both the compression and runtime performance on mobile platforms.
 
@@ -23,29 +23,29 @@ Before venturing into deep learning, I completed a DPhil in Mathematics at the U
 
 <div class="grid cards" markdown>
 
--   :material-account-school:{ .lg .middle } **Education**
+- :material-account-school:{ .lg .middle } **Education**
 
-    ---
+  ***
 
-    Learn about my academic journey from Ljubljana to Oxford
+  Learn about my academic journey from Ljubljana to Oxford
 
-    [:octicons-arrow-right-24: Education](about.md#education)
+  [:octicons-arrow-right-24: Education](about.md#education)
 
--   :material-flask:{ .lg .middle } **Research**
+- :material-flask:{ .lg .middle } **Research**
 
-    ---
+  ***
 
-    Explore my research in mathematics and machine learning
+  Explore my research in mathematics and machine learning
 
-    [:octicons-arrow-right-24: Research](research.md)
+  [:octicons-arrow-right-24: Research](research.md)
 
--   :material-rss:{ .lg .middle } **Blog**
+- :material-rss:{ .lg .middle } **Blog**
 
-    ---
+  ***
 
-    Read my thoughts on ML, mathematics, and technology
+  Read my thoughts on ML, mathematics, and technology
 
-    [:octicons-arrow-right-24: Blog](blog/index.md)
+  [:octicons-arrow-right-24: Blog](blog/index.md)
 
 </div>
 
@@ -55,10 +55,10 @@ I'm always interested in discussing machine learning, mathematics, and technolog
 
 <div style="text-align: center; margin: 2em 0;">
   <a href="mailto:sebastjancizel@gmail.com" class="md-button md-button--primary">
-    :fontawesome-solid-envelope: Contact Me
+    :fontawesome-solid-paper-plane: Contact Me
   </a>
-  <a href="https://www.dropbox.com/s/humefrhq1zvujay/Resume_CizelSebastjan.pdf?dl=0" class="md-button">
-    :fontawesome-solid-download: Download CV
+  <a href="assets/Resume_CizelSebastjan.pdf" class="md-button">
+    :fontawesome-solid-file-arrow-down: Download CV
   </a>
 </div>
 
