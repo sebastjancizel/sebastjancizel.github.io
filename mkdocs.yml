@@ -67,7 +67,6 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.ico
-  logo: assets/images/headshot.webp
 
 # Plugins
 plugins:
@@ -161,7 +160,6 @@ nav:
   - Home: index.md
   - About: about.md
   - Research: research.md
-  - Portfolio: portfolio.md
   - Blog:
     - blog/index.md
 

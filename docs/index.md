@@ -39,14 +39,6 @@ Before venturing into deep learning, I completed a DPhil in Mathematics at the U
 
     [:octicons-arrow-right-24: Research](research.md)
 
--   :material-briefcase:{ .lg .middle } **Portfolio**
-
-    ---
-
-    See my projects and technical work
-
-    [:octicons-arrow-right-24: Portfolio](portfolio.md)
-
 -   :material-rss:{ .lg .middle } **Blog**
 
     ---
