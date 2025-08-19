@@ -1,7 +1,7 @@
 #!/bin/bash
 # Build script for production
 
-echo "🏗️  Building site for production..."
+echo "🏗️  Building site for production with uv..."
 
 # Clean previous build
 if [ -d "site" ]; then
@@ -11,7 +11,7 @@ fi
 
 # Build the site
 echo "📦 Building MkDocs site..."
-mkdocs build --strict
+uv run mkdocs build --strict
 
 if [ $? -eq 0 ]; then
     echo "✅ Build completed successfully!"

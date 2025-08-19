@@ -20,6 +20,7 @@ A modern, content-focused personal website built with [Material for MkDocs](http
 ## 🛠️ Tech Stack
 
 - **[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)** - Static site generator with Material Design
+- **[uv](https://docs.astral.sh/uv/)** - Fast Python package and project manager
 - **[Python](https://python.org)** - Required for MkDocs and plugins
 - **[GitHub Actions](https://github.com/features/actions)** - Automated deployment pipeline
 - **[GitHub Pages](https://pages.github.com/)** - Free, reliable hosting
@@ -29,7 +30,7 @@ A modern, content-focused personal website built with [Material for MkDocs](http
 ### Prerequisites
 
 - Python 3.8 or higher
-- pip package manager
+- [uv](https://docs.astral.sh/uv/) - Fast Python package manager (automatically installed by setup script)
 - Git
 
 ### Setup Instructions
@@ -48,17 +49,15 @@ A modern, content-focused personal website built with [Material for MkDocs](http
    ```bash
    ./scripts/setup.sh
    ```
+   This will automatically install uv (if needed) and sync all dependencies.
 
-3. **Activate the virtual environment**
-   ```bash
-   source venv/bin/activate
-   ```
-
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    make dev
    ```
    The site will be available at `http://127.0.0.1:8000`
+
+   **Note:** uv automatically manages the virtual environment for you!
 
 ## 📝 Development Workflow
 
@@ -66,19 +65,20 @@ A modern, content-focused personal website built with [Material for MkDocs](http
 
 | Command | Description |
 |---------|-------------|
-| `make setup` | Set up development environment |
+| `make setup` | Set up development environment with uv |
+| `make sync` | Sync dependencies using uv (preferred) |
 | `make dev` | Start development server with hot reload |
 | `make build` | Build site for production |
 | `make clean` | Clean build artifacts |
-| `make install` | Install/update dependencies |
+| `make install` | Install dependencies using pip (fallback) |
 
 ### Development Server
 ```bash
 # Start development server
 make dev
 
-# Alternative using MkDocs directly
-mkdocs serve
+# Alternative using uv directly
+uv run mkdocs serve
 ```
 
 The development server features:
@@ -118,7 +118,8 @@ sebastjancizel.github.io/
 │   └── 🔧 build.sh           # Production build
 ├── 📁 .github/workflows/      # GitHub Actions
 │   └── 📄 deploy.yml         # Deployment workflow
-├── 📄 requirements.txt        # Python dependencies
+├── 📄 pyproject.toml          # Python project configuration & dependencies
+├── 📄 requirements.txt        # Python dependencies (fallback)
 ├── 📄 Makefile               # Build commands
 └── 📄 README.md              # This file
 ```
@@ -224,14 +225,21 @@ Main configuration file containing:
 - Navigation structure
 - Extensions and customizations
 
-#### `requirements.txt`
-Python dependencies:
-```txt
-mkdocs-material>=9.5.0
-mkdocs-rss-plugin>=1.6.0
-pillow>=10.0.0
-cairosvg>=2.6.0
+#### `pyproject.toml`
+Main Python project configuration and dependencies using modern Python packaging standards:
+```toml
+[project]
+dependencies = [
+    "mkdocs-material>=9.5.0",
+    "mkdocs-rss-plugin>=1.6.0", 
+    "mkdocs-minify-plugin>=0.6.0",
+    "pillow>=10.0.0",
+    "cairosvg>=2.6.0",
+]
 ```
+
+#### `requirements.txt`
+Fallback dependencies file for compatibility with older tools.
 
 ### Plugin Configuration
 
@@ -296,17 +304,18 @@ make dev
 
 **Python Environment Issues:**
 ```bash
-# Recreate virtual environment
-rm -rf venv
+# Clean and reinstall with uv
+make clean
 make setup
 ```
 
 ### Getting Help
 
 - 📖 [Material for MkDocs Documentation](https://squidfunk.github.io/mkdocs-material/)
+- ⚡ [uv Documentation](https://docs.astral.sh/uv/)
 - 💬 [MkDocs Community](https://github.com/mkdocs/mkdocs/discussions)
 - 📧 [Contact me](mailto:sebastjancizel@gmail.com) for specific questions
 
 ---
 
-**Built with ❤️ using Material for MkDocs**
+**Built with ❤️ using Material for MkDocs and ⚡ uv**

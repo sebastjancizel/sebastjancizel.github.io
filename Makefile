@@ -1,25 +1,32 @@
 # Makefile for Material MkDocs site
 
-.PHONY: help setup dev build clean install serve deploy
+.PHONY: help setup dev build clean install serve deploy sync
 
 # Default target
 help:
 	@echo "Available commands:"
-	@echo "  setup    - Set up the development environment"
-	@echo "  install  - Install dependencies"
+	@echo "  setup    - Set up the development environment with uv"
+	@echo "  sync     - Sync dependencies using uv"
+	@echo "  install  - Install dependencies (fallback to pip)"
 	@echo "  dev      - Start development server with hot reload"
 	@echo "  serve    - Start development server"
 	@echo "  build    - Build the site for production"
 	@echo "  clean    - Clean build artifacts"
-	@echo "  deploy   - Deploy to GitHub Pages (requires GitHub CLI)"
+	@echo "  deploy   - Deploy to GitHub Pages"
 
-# Set up development environment
+# Set up development environment with uv
 setup:
 	@chmod +x scripts/setup.sh
 	@./scripts/setup.sh
 
-# Install dependencies
+# Sync dependencies using uv (preferred)
+sync:
+	@echo "📦 Syncing dependencies with uv..."
+	uv sync
+
+# Install dependencies (fallback to pip)
 install:
+	@echo "📦 Installing dependencies with pip (fallback)..."
 	pip install -r requirements.txt
 
 # Start development server
