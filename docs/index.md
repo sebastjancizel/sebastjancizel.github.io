@@ -55,13 +55,11 @@ I'm always interested in discussing machine learning, mathematics, and technolog
 
 <div style="text-align: center; margin: 2em 0;">
   <a href="mailto:sebastjancizel@gmail.com" class="md-button md-button--primary">
-    :material-email: Contact Me
+    :fontawesome-solid-envelope: Contact Me
   </a>
   <a href="https://www.dropbox.com/s/humefrhq1zvujay/Resume_CizelSebastjan.pdf?dl=0" class="md-button">
-    :material-download: Download CV
+    :fontawesome-solid-download: Download CV
   </a>
 </div>
 
 ---
-
-*Currently based in Oxford, United Kingdom*
