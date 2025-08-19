@@ -1,0 +1,187 @@
+/* Custom styles for Sebastjan Cizel's website */
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply animations to content */
+.md-content__inner {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.md-nav__item {
+  animation: slideInLeft 0.4s ease-out;
+}
+
+/* Floating animation for profile picture */
+.md-content img[alt*="Sebastjan"]:first-of-type {
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.md-content img[alt*="Sebastjan"]:first-of-type:hover {
+  transform: scale(1.05);
+  animation-play-state: paused;
+}
+
+/* Custom grid layout for cards */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid.cards > div {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  background: var(--md-default-bg-color);
+}
+
+.grid.cards > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Enhanced button styles */
+.md-button {
+  transition: all 0.3s ease;
+  margin: 0.25rem;
+}
+
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Custom styling for images with captions */
+.md-content img {
+  transition: transform 0.3s ease;
+}
+
+.md-content img:hover {
+  transform: scale(1.02);
+}
+
+/* Blog post styling */
+.md-post {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Custom color scheme adjustments */
+:root {
+  --md-primary-fg-color: #673ab7;
+  --md-primary-fg-color--light: #9c27b0;
+  --md-primary-fg-color--dark: #512da8;
+}
+
+/* Dark mode specific styles */
+[data-md-color-scheme="slate"] {
+  --md-hue: 260;
+}
+
+/* Timeline styling for experience/education */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--md-primary-fg-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+  margin-left: -5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline {
+    padding-left: 1rem;
+  }
+  
+  .timeline-item::before {
+    left: -1rem;
+  }
+}
+
+/* Code block enhancements */
+.highlight {
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Search result highlighting */
+.md-search-result__teaser mark {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Custom admonition styling */
+.md-typeset .admonition {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+/* Footer styling */
+.md-footer {
+  animation: fadeInUp 0.8s ease-out;
+}
