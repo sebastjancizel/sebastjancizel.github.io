@@ -103,7 +103,7 @@ AWS, Unix, git, Github actions, Weights and Biases, Docker, tmux, Vue, GraphQL, 
 
 ## Contact Information
 
-- **Location:** Magdalen College, Oxford, United Kingdom
+- **Location:** London, United Kingdom
 - **Email:** [sebastjancizel@gmail.com](mailto:sebastjancizel@gmail.com)
 - **LinkedIn:** [scizel](https://www.linkedin.com/in/scizel/)
 - **GitHub:** [sebastjancizel](https://github.com/sebastjancizel)
