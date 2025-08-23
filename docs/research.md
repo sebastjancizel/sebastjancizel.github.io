@@ -21,25 +21,3 @@ This work explores the relationship between different string theory dualities an
 **Collaborators:** Andreas Braun, Max Hubner, Sakura Schafer-Nameki
 
 An investigation into the mathematical structures (Higgs bundles) that arise when considering M-theory compactifications on seven-dimensional G₂ manifolds, bridging algebraic geometry and theoretical physics.
-
-## Current Research Interests
-
-### Neural Network Compression
-My current research focuses on developing AI-based image and video compression algorithms. This work combines:
-
-- **Perceptual optimization** - Algorithms that optimize for human visual perception rather than traditional metrics
-- **Mobile optimization** - Ensuring compressed content performs well on resource-constrained devices  
-- **Real-time processing** - Developing algorithms suitable for live video applications
-
-### Mathematical Foundations of Deep Learning
-Drawing on my mathematical background, I'm particularly interested in:
-
-- The theoretical underpinnings of neural network architectures
-- Probabilistic interpretations of deep learning models
-- Geometric perspectives on optimization in high-dimensional spaces
-
-## Research Philosophy
-
-The transition from pure mathematics to applied machine learning has provided a unique perspective on both fields. Mathematical rigor and theoretical understanding remain central to developing robust and interpretable AI systems, while practical applications drive innovation and reveal new mathematical questions.
-
-This interdisciplinary approach continues to inform my work, whether exploring the geometric structure of neural network loss landscapes or developing theoretically grounded compression algorithms.
