@@ -5,6 +5,43 @@
 (function() {
   'use strict';
 
+  // Theme Toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+
+  function getStoredTheme() {
+    return localStorage.getItem('theme');
+  }
+
+  function getPreferredTheme() {
+    const stored = getStoredTheme();
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function setTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }
+
+  // Initialize theme
+  setTheme(getPreferredTheme());
+
+  // Toggle handler
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  // Listen for system preference changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!getStoredTheme()) {
+      setTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+
   // Header hide/show on scroll
   const header = document.getElementById('header');
   let lastScrollY = window.scrollY;
