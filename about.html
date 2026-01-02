@@ -37,11 +37,23 @@
   </header>
 
   <main>
-    <div class="page-content">
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+      <ul class="floating-nav__list">
+        <li><a href="#experience" class="floating-nav__link">Experience</a></li>
+        <li><a href="#patents" class="floating-nav__link">Patents</a></li>
+        <li><a href="#publications" class="floating-nav__link">Publications</a></li>
+        <li><a href="#education" class="floating-nav__link">Education</a></li>
+        <li><a href="#skills" class="floating-nav__link">Skills</a></li>
+        <li><a href="#contact" class="floating-nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page-content page-content--with-nav">
       <h1>About</h1>
 
       <!-- Experience Section -->
-      <section class="section">
+      <section id="experience" class="section">
         <h2 class="section__title">Experience</h2>
 
         <div class="card">
@@ -100,8 +112,72 @@
         </div>
       </section>
 
+      <!-- Patents Section -->
+      <section id="patents" class="section">
+        <h2 class="section__title">Patents</h2>
+
+        <div class="card">
+          <div class="card__header">
+            <h3 class="card__title"><a href="https://patentcenter.uspto.gov/applications/18458511">US Patent 12,113,985</a></h3>
+            <span class="card__meta">Oct 2024</span>
+          </div>
+          <p class="card__description">
+            Method and Data Processing System for Lossy Image or Video Encoding. Motion translations with flow-based processes for AI video compression.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <h3 class="card__title"><a href="https://patentcenter.uspto.gov/applications/18458497">US Patent 11,936,866</a></h3>
+            <span class="card__meta">Mar 2024</span>
+          </div>
+          <p class="card__description">
+            Method and Data Processing System for Lossy Image or Video Encoding. Motion transformation handling in AI compression processes.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <h3 class="card__title"><a href="https://patents.google.com/?inventor=sebastjan+cizel">10 Additional Applications</a></h3>
+            <span class="card__meta">Pending/Granted</span>
+          </div>
+          <p class="card__description">
+            Covering advanced neural compression techniques, optical flow, and video encoding optimization methods.
+          </p>
+        </div>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="section">
+        <h2 class="section__title">Publications</h2>
+
+        <div class="card">
+          <div class="card__header">
+            <h3 class="card__title">I/c-extremization in M/F-duality</h3>
+            <span class="card__meta">2020</span>
+          </div>
+          <p class="card__org">SciPost Physics</p>
+          <p class="card__description">
+            With M. van Beest, S. Schafer-Nameki, J. Sparks
+          </p>
+          <a href="https://scipost.org/SciPostPhys.9.3.029" class="card__link">Read paper →</a>
+        </div>
+
+        <div class="card">
+          <div class="card__header">
+            <h3 class="card__title">Higgs Bundles for M-theory on G<sub>2</sub>-manifolds</h3>
+            <span class="card__meta">2019</span>
+          </div>
+          <p class="card__org">Journal of High Energy Physics</p>
+          <p class="card__description">
+            With A. Braun, M. Hubner, S. Schafer-Nameki
+          </p>
+          <a href="https://link.springer.com/article/10.1007/JHEP03(2019)199" class="card__link">Read paper →</a>
+        </div>
+      </section>
+
       <!-- Education Section -->
-      <section class="section">
+      <section id="education" class="section">
         <h2 class="section__title">Education</h2>
 
         <div class="card">
@@ -139,7 +215,7 @@
       </section>
 
       <!-- Skills Section -->
-      <section class="section">
+      <section id="skills" class="section">
         <h2 class="section__title">Skills</h2>
 
         <div class="card">
@@ -179,7 +255,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="section">
+      <section id="contact" class="section">
         <h2 class="section__title">Contact</h2>
         <div class="card">
           <p class="card__description mb-md">

@@ -96,4 +96,49 @@
     }, { once: true });
   });
 
+  // Floating nav scroll spy
+  const floatingNav = document.querySelector('.floating-nav');
+  if (floatingNav) {
+    const navLinks = floatingNav.querySelectorAll('.floating-nav__link');
+    const sections = [];
+
+    navLinks.forEach(link => {
+      const targetId = link.getAttribute('href').slice(1);
+      const section = document.getElementById(targetId);
+      if (section) {
+        sections.push({ id: targetId, element: section, link: link });
+      }
+    });
+
+    function updateActiveNav() {
+      const scrollY = window.scrollY;
+      const offset = 150;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const isNearBottom = scrollY + windowHeight >= documentHeight - 50;
+
+      let activeSection = sections[0];
+
+      // If near bottom, highlight last section
+      if (isNearBottom && sections.length > 0) {
+        activeSection = sections[sections.length - 1];
+      } else {
+        sections.forEach(section => {
+          const sectionTop = section.element.offsetTop - offset;
+          if (scrollY >= sectionTop) {
+            activeSection = section;
+          }
+        });
+      }
+
+      navLinks.forEach(link => link.classList.remove('floating-nav__link--active'));
+      if (activeSection) {
+        activeSection.link.classList.add('floating-nav__link--active');
+      }
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+  }
+
 })();
