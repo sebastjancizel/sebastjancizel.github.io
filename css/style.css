@@ -295,6 +295,7 @@ main {
   aspect-ratio: 1;
   overflow: hidden;
   border: var(--border);
+  margin: auto;
 }
 
 .portrait--circle {
@@ -338,6 +339,21 @@ main {
   color: var(--color-ink-light);
   margin-bottom: var(--space-xs);
   font-size: 0.75rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  height: 1.2em;
+  background: var(--color-ink-light);
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .intro-cell__name {
