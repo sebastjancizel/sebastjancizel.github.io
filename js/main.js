@@ -178,4 +178,54 @@
     updateActiveNav();
   }
 
+  // Resume data loading and rendering
+  async function loadResumeData() {
+    try {
+      const response = await fetch('/data/resume.json');
+      if (!response.ok) throw new Error('Failed to load resume data');
+      return await response.json();
+    } catch (error) {
+      console.error('Error loading resume data:', error);
+      return null;
+    }
+  }
+
+  function renderExperience(experiences, container, cssPrefix, limit) {
+    if (!container || !experiences) return;
+
+    const items = limit ? experiences.slice(0, limit) : experiences;
+
+    container.innerHTML = items.map(exp => `
+      <div class="${cssPrefix}">
+        <div class="${cssPrefix}__header">
+          <h3 class="${cssPrefix}__title">${exp.title}</h3>
+          <span class="${cssPrefix}__date">${exp.startDate} – ${exp.endDate}</span>
+        </div>
+        <p class="${cssPrefix}__org">${exp.org}</p>
+        <p class="${cssPrefix}__description">${exp.description}</p>
+      </div>
+    `).join('');
+  }
+
+  // Initialize resume data on pages that need it
+  async function initResumeData() {
+    const indexContainer = document.getElementById('experience-container');
+    const resumeContainer = document.getElementById('resume-experience-container');
+
+    if (!indexContainer && !resumeContainer) return;
+
+    const data = await loadResumeData();
+    if (!data) return;
+
+    if (indexContainer) {
+      renderExperience(data.experience, indexContainer, 'work-item', 2);
+    }
+
+    if (resumeContainer) {
+      renderExperience(data.experience, resumeContainer, 'resume-item');
+    }
+  }
+
+  initResumeData();
+
 })();
