@@ -181,7 +181,7 @@
   // Resume data loading and rendering
   async function loadResumeData() {
     try {
-      const response = await fetch('/data/resume.json');
+      const response = await fetch('data/resume.json');
       if (!response.ok) throw new Error('Failed to load resume data');
       return await response.json();
     } catch (error) {

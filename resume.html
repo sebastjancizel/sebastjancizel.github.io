@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Sebastjan Cizel</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Base Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Resume-specific styles */
+    .resume {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: var(--space-lg);
+      background: var(--color-paper);
+    }
+
+    .resume__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid var(--color-ink);
+      padding-bottom: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+
+    .resume__name {
+      font-family: var(--font-mono);
+      font-size: 1.75rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .resume__title {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      color: var(--color-ink-muted);
+      margin-top: 0.25rem;
+    }
+
+    .resume__contact {
+      text-align: right;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .resume__contact a {
+      color: var(--color-ink);
+    }
+
+    .resume__body {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: var(--space-lg);
+    }
+
+    .resume__main {
+      /* Main content column */
+    }
+
+    .resume__sidebar {
+      /* Sidebar column */
+    }
+
+    .resume-section {
+      margin-bottom: var(--space-md);
+    }
+
+    .resume-section__title {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-ink);
+      border-bottom: 1px solid var(--color-border-light);
+      padding-bottom: 0.25rem;
+      margin-bottom: var(--space-sm);
+    }
+
+    .resume-item {
+      margin-bottom: var(--space-sm);
+    }
+
+    .resume-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .resume-item__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: var(--space-sm);
+    }
+
+    .resume-item__title {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .resume-item__date {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--color-ink-light);
+      white-space: nowrap;
+    }
+
+    .resume-item__org {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--color-ink-muted);
+      margin: 0.125rem 0;
+    }
+
+    .resume-item__description {
+      font-size: 0.8125rem;
+      color: var(--color-ink-muted);
+      line-height: 1.5;
+      margin: 0.25rem 0 0 0;
+    }
+
+    .resume-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.375rem;
+    }
+
+    .resume-skill {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border-light);
+      padding: 0.125rem 0.5rem;
+    }
+
+    .resume-education__item {
+      margin-bottom: 0.75rem;
+    }
+
+    .resume-education__degree {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .resume-education__school {
+      font-size: 0.75rem;
+      color: var(--color-ink-muted);
+      margin: 0;
+    }
+
+    .resume-education__date {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--color-ink-light);
+    }
+
+    .resume-patents {
+      font-size: 0.8125rem;
+      color: var(--color-ink-muted);
+      line-height: 1.5;
+    }
+
+    .resume-patents a {
+      color: var(--color-ink);
+    }
+
+    /* Print button */
+    .print-btn {
+      position: fixed;
+      bottom: var(--space-lg);
+      right: var(--space-lg);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      background: var(--color-ink);
+      color: var(--color-white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+
+    .print-btn:hover {
+      background: var(--color-ink-muted);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════════════
+       PRINT STYLES - A4 Optimization
+       ═══════════════════════════════════════════════════════════════════════ */
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      html, body {
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+        width: 210mm;
+        height: 297mm;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .header, .footer, .print-btn {
+        display: none !important;
+      }
+
+      .resume {
+        padding: 15mm 18mm;
+        max-width: none;
+        width: 210mm;
+        min-height: 297mm;
+        box-sizing: border-box;
+      }
+
+      .resume__header {
+        padding-bottom: 1rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .resume__name {
+        font-size: 22pt;
+      }
+
+      .resume__title {
+        font-size: 10pt;
+      }
+
+      .resume__contact {
+        font-size: 9pt;
+        line-height: 1.8;
+      }
+
+      .resume__body {
+        gap: 2rem;
+        grid-template-columns: 1fr 200px;
+      }
+
+      .resume-section {
+        margin-bottom: 1.25rem;
+      }
+
+      .resume-section__title {
+        font-size: 8pt;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.3rem;
+      }
+
+      .resume-item {
+        margin-bottom: 1rem;
+      }
+
+      .resume-item__title {
+        font-size: 11pt;
+      }
+
+      .resume-item__date {
+        font-size: 8pt;
+      }
+
+      .resume-item__org {
+        font-size: 9pt;
+        margin: 0.2rem 0;
+      }
+
+      .resume-item__description {
+        font-size: 9.5pt;
+        line-height: 1.5;
+        margin-top: 0.4rem;
+      }
+
+      .resume-skill {
+        font-size: 8pt;
+        padding: 0.2rem 0.5rem;
+      }
+
+      .resume-skills {
+        gap: 0.4rem;
+      }
+
+      .resume-education__degree {
+        font-size: 10pt;
+      }
+
+      .resume-education__school {
+        font-size: 9pt;
+      }
+
+      .resume-education__date {
+        font-size: 8pt;
+      }
+
+      .resume-education__item {
+        margin-bottom: 0.9rem;
+      }
+
+      .resume-patents {
+        font-size: 9.5pt;
+        line-height: 1.5;
+      }
+
+      a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header" class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">Sebastjan Cizel</a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Index</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="research.html" class="nav__link">Research</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="resume">
+    <!-- Header -->
+    <header class="resume__header">
+      <div>
+        <h1 class="resume__name">Sebastjan Cizel</h1>
+        <p class="resume__title">Director, AI Codec Team · Research Scientist</p>
+      </div>
+      <div class="resume__contact">
+        <div>London, United Kingdom</div>
+        <div><a href="mailto:sebastjancizel@gmail.com">sebastjancizel@gmail.com</a></div>
+        <div><a href="https://github.com/sebastjancizel">github.com/sebastjancizel</a></div>
+        <div><a href="https://linkedin.com/in/scizel">linkedin.com/in/scizel</a></div>
+      </div>
+    </header>
+
+    <!-- Body: Two columns -->
+    <div class="resume__body">
+      <!-- Main Column -->
+      <div class="resume__main">
+        <!-- Experience -->
+        <section class="resume-section">
+          <h2 class="resume-section__title">Experience</h2>
+          <div id="resume-experience-container"></div>
+        </section>
+
+        <!-- Publications -->
+        <section class="resume-section">
+          <h2 class="resume-section__title">Publications</h2>
+
+          <div class="resume-item">
+            <div class="resume-item__header">
+              <h3 class="resume-item__title">I/c-extremization in M/F-duality</h3>
+              <span class="resume-item__date">2020</span>
+            </div>
+            <p class="resume-item__org">SciPost Physics · with M. van Beest, S. Schafer-Nameki, J. Sparks</p>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item__header">
+              <h3 class="resume-item__title">Higgs Bundles for M-theory on G₂-manifolds</h3>
+              <span class="resume-item__date">2019</span>
+            </div>
+            <p class="resume-item__org">JHEP · with A. Braun, M. Hubner, S. Schafer-Nameki</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sidebar Column -->
+      <div class="resume__sidebar">
+        <!-- Skills -->
+        <section class="resume-section">
+          <h2 class="resume-section__title">Skills</h2>
+          <div class="resume-skills">
+            <span class="resume-skill">Python</span>
+            <span class="resume-skill">PyTorch</span>
+            <span class="resume-skill">C++</span>
+            <span class="resume-skill">CUDA</span>
+            <span class="resume-skill">Triton</span>
+            <span class="resume-skill">AWS</span>
+            <span class="resume-skill">Docker</span>
+            <span class="resume-skill">Kubernetes</span>
+            <span class="resume-skill">Vue</span>
+            <span class="resume-skill">GraphQL</span>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-section">
+          <h2 class="resume-section__title">Education</h2>
+
+          <div class="resume-education__item">
+            <h3 class="resume-education__degree">DPhil Mathematics</h3>
+            <p class="resume-education__school">University of Oxford</p>
+            <span class="resume-education__date">2017 – 2021</span>
+          </div>
+
+          <div class="resume-education__item">
+            <h3 class="resume-education__degree">MSc Pure Mathematics</h3>
+            <p class="resume-education__school">Imperial College London</p>
+            <span class="resume-education__date">2016 – 2017</span>
+          </div>
+
+          <div class="resume-education__item">
+            <h3 class="resume-education__degree">BSc Mathematics</h3>
+            <p class="resume-education__school">University of Ljubljana</p>
+            <span class="resume-education__date">2013 – 2016</span>
+          </div>
+        </section>
+
+        <!-- Patents -->
+        <section class="resume-section">
+          <h2 class="resume-section__title">Patents</h2>
+          <p class="resume-patents">
+            <strong>2 granted US patents</strong> on neural video compression and motion-based encoding methods, plus <strong>10 pending applications</strong> covering optical flow and encoding optimization.
+          </p>
+        </section>
+
+        <!-- Expertise -->
+        <section class="resume-section">
+          <h2 class="resume-section__title">Expertise</h2>
+          <p class="resume-patents">
+            ML performance optimization, neural compression, model compilation (FX, Inductor, Dynamo), generative CV models, optical flow, video codecs.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Sebastjan Cizel</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

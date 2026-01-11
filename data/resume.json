@@ -1,0 +1,32 @@
+{
+  "experience": [
+    {
+      "title": "Director, AI Codec Team",
+      "org": "InterDigital",
+      "startDate": "Oct 2025",
+      "endDate": "Present",
+      "description": "Leading the London AI Video Lab, pushing the boundaries of AI-based codecs. Developing solutions for reproducible inference of neural networks across heterogeneous platforms and accelerators."
+    },
+    {
+      "title": "Head of Engineering",
+      "org": "Deep Render",
+      "startDate": "Oct 2023",
+      "endDate": "Oct 2025",
+      "description": "Technical lead and manager of 15 engineers. Built unified model inference library for major AI accelerators (Nvidia, Apple, Qualcomm, Intel). Delivered world's first AI codec in FFmpeg & VLC with real-time encode/decode on consumer devices."
+    },
+    {
+      "title": "Senior Research Scientist",
+      "org": "Deep Render",
+      "startDate": "Feb 2023",
+      "endDate": "Oct 2023",
+      "description": "Led model quantization and pruning research achieving 2x improvements in memory footprint and runtime. Built client-facing applications and model evaluation tools."
+    },
+    {
+      "title": "Research Scientist",
+      "org": "Deep Render",
+      "startDate": "Sep 2021",
+      "endDate": "Feb 2023",
+      "description": "Foundational research contributions to video compression with >10% efficiency gains. Lead maintainer of core model codebase (PyTorch, C++, CUDA) with 60k+ lines of contributions."
+    }
+  ]
+}
