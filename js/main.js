@@ -199,7 +199,7 @@
       <div class="${cssPrefix}">
         <div class="${cssPrefix}__header">
           <h3 class="${cssPrefix}__title">${exp.title}</h3>
-          <span class="${cssPrefix}__date">${exp.startDate} – ${exp.endDate}</span>
+          <span class="${cssPrefix}__${cssPrefix === 'card' ? 'meta' : 'date'}">${exp.startDate} – ${exp.endDate}</span>
         </div>
         <p class="${cssPrefix}__org">${exp.org}</p>
         <p class="${cssPrefix}__description">${exp.description}</p>
@@ -209,10 +209,10 @@
 
   // Initialize resume data on pages that need it
   async function initResumeData() {
-    const indexContainer = document.getElementById('experience-container');
-    const resumeContainer = document.getElementById('resume-experience-container');
+    const indexContainer = document.getElementById('index-experience-container');
+    const aboutContainer = document.getElementById('experience-container');
 
-    if (!indexContainer && !resumeContainer) return;
+    if (!indexContainer && !aboutContainer) return;
 
     const data = await loadResumeData();
     if (!data) return;
@@ -221,8 +221,8 @@
       renderExperience(data.experience, indexContainer, 'work-item', 2);
     }
 
-    if (resumeContainer) {
-      renderExperience(data.experience, resumeContainer, 'resume-item');
+    if (aboutContainer) {
+      renderExperience(data.experience, aboutContainer, 'card');
     }
   }
 
