@@ -13,7 +13,7 @@ Personal website for Sebastjan Cizel.
 ├── js/main.js          # Scripts
 ├── data/resume.json    # Resume data (rendered dynamically)
 ├── blog/               # Blog posts
-└── assets/             # Images, PDF resume
+└── assets/             # Images
 ```
 
 ## Development
