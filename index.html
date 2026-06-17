@@ -46,7 +46,8 @@
       <ul class="nav__links">
         <li><a href="index.html" class="nav__link nav__link--active">Index</a></li>
         <li><a href="about.html" class="nav__link">About</a></li>
-        <li><a href="research.html" class="nav__link">Research</a></li>
+        <!-- Blog hidden until ready to publish -->
+        <!-- <li><a href="blog/index.html" class="nav__link">Blog</a></li> -->
         <li>
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
             <span class="theme-toggle__track"></span>
@@ -77,41 +78,49 @@
       <!-- Row 1: Introduction + Photo + Navigation -->
 
       <!-- Cell A: Introduction -->
-      <div class="bento__cell bento__cell--span-5">
+      <div class="bento__cell bento__cell--span-8">
         <div class="intro-cell">
           <span class="intro-cell__greeting">// hello, world<span class="cursor"></span></span>
           <span class="intro-cell__name">Sebastjan Cizel</span>
           <span class="intro-cell__role">Director, AI Codec Team at InterDigital</span>
+          <svg class="deco deco-signal" viewBox="0 0 280 32" fill="none" aria-hidden="true">
+            <path class="deco-signal__wave" pathLength="1"
+              d="M0 16 Q10 2 20 16 T40 16 T60 16 T80 16 T100 16 T120 16 T140 16" />
+            <line class="deco-signal__gate" x1="140" y1="3" x2="140" y2="29" />
+            <path class="deco-signal__steps" pathLength="1"
+              d="M140 16 H152 V7 H168 V25 H184 V11 H200 V21 H216 V9 H232 V16 H280" />
+            <circle class="deco-signal__dot" cx="140" cy="16" r="2.5" />
+          </svg>
           <p class="intro-cell__bio">
             I'm an ML Engineer and co-lead of the AI codec team at InterDigital. My focus is on the fundamentals of ML model infrastructure: performance optimization, compilation, and getting models to run efficiently on real hardware. Before moving into engineering, I earned my DPhil in Mathematics at Oxford, studying the geometry underlying string theory. More recently, I've become fascinated by AI-native development workflows and spend my spare time building with the latest agent tooling.
           </p>
           <span class="intro-cell__location">London, United Kingdom</span>
+          <nav class="nav-bar nav-bar--intro" aria-label="Site navigation">
+            <span class="nav-bar__label">Navigate</span>
+            <ul class="nav-bar__list">
+              <li class="nav-bar__item">
+                <a href="about.html" class="nav-bar__link">About &amp; Background</a>
+              </li>
+              <!-- Blog hidden until ready to publish -->
+              <!-- <li class="nav-bar__item">
+                <a href="blog/index.html" class="nav-bar__link">Blog</a>
+              </li> -->
+              <li class="nav-bar__item">
+                <a href="https://github.com/sebastjancizel" class="nav-bar__link">GitHub</a>
+              </li>
+              <li class="nav-bar__item">
+                <a href="about.html#publications" class="nav-bar__link">Academic Research</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
 
       <!-- Cell B: Photo -->
-      <div class="bento__cell bento__cell--span-3" style="display: flex; align-items: center; justify-content: center;">
+      <div class="bento__cell bento__cell--span-4" style="display: flex; align-items: center; justify-content: center;">
         <div class="portrait">
           <img src="assets/images/headshot.webp" alt="Sebastjan Cizel" class="portrait__image">
         </div>
-      </div>
-
-      <!-- Cell C: Navigation -->
-      <div class="bento__cell bento__cell--span-4">
-        <div class="section-header">
-          <span class="section-header__title">Navigate</span>
-        </div>
-        <ul class="nav-vertical">
-          <li class="nav-vertical__item">
-            <a href="about.html" class="nav-vertical__link">About & Background</a>
-          </li>
-          <li class="nav-vertical__item">
-            <a href="https://github.com/sebastjancizel" class="nav-vertical__link">GitHub</a>
-          </li>
-          <li class="nav-vertical__item">
-            <a href="research.html" class="nav-vertical__link">Academic Research</a>
-          </li>
-        </ul>
       </div>
 
       <!-- Row 2: Current Role + News -->
@@ -172,28 +181,21 @@
         <div class="section-header">
           <span class="section-header__title">Contact</span>
         </div>
-        <ul class="contact-list"
-          style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--color-border-light); border: 1px solid var(--color-border-light);">
-          <li class="contact-list__item"
-            style="background: var(--color-paper); padding: var(--space-sm); border-bottom: none;">
-            <a href="mailto:sebastjancizel@gmail.com" class="contact-list__link"
-              style="flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+        <ul class="contact-list contact-grid">
+          <li class="contact-list__item contact-grid__item">
+            <a href="mailto:sebastjancizel@gmail.com" class="contact-list__link">
               <span class="contact-list__label">Email</span>
               <span>sebastjancizel@gmail.com</span>
             </a>
           </li>
-          <li class="contact-list__item"
-            style="background: var(--color-paper); padding: var(--space-sm); border-bottom: none;">
-            <a href="https://github.com/sebastjancizel" class="contact-list__link"
-              style="flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+          <li class="contact-list__item contact-grid__item">
+            <a href="https://github.com/sebastjancizel" class="contact-list__link">
               <span class="contact-list__label">GitHub</span>
               <span>@sebastjancizel</span>
             </a>
           </li>
-          <li class="contact-list__item"
-            style="background: var(--color-paper); padding: var(--space-sm); border-bottom: none;">
-            <a href="https://www.linkedin.com/in/scizel/" class="contact-list__link"
-              style="flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+          <li class="contact-list__item contact-grid__item">
+            <a href="https://www.linkedin.com/in/scizel/" class="contact-list__link">
               <span class="contact-list__label">LinkedIn</span>
               <span>/in/scizel</span>
             </a>
@@ -204,7 +206,7 @@
   </main>
 
   <footer class="footer">
-    <p class="footer__text">&copy; 2025 Sebastjan Cizel</p>
+    <p class="footer__text">&copy; 2026 Sebastjan Cizel</p>
   </footer>
 
   <script src="js/main.js"></script>

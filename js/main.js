@@ -228,4 +228,70 @@
 
   initResumeData();
 
+  // Decorative SVG highlights (technical-drawing details)
+  // Injected here rather than in markup so every page gets them for free and
+  // they vanish gracefully without JS. All are aria-hidden, pure decoration.
+  function injectDecorations() {
+    const make = (markup) => {
+      const tpl = document.createElement('template');
+      tpl.innerHTML = markup.trim();
+      return tpl.content.firstElementChild;
+    };
+
+    // Registration crosshair, flush right on every section header
+    const crosshair = `
+      <svg class="deco deco-crosshair" viewBox="0 0 12 12" aria-hidden="true">
+        <circle class="deco-draw" cx="6" cy="6" r="3.25" pathLength="1"/>
+        <line class="deco-draw" x1="6" y1="0" x2="6" y2="2.5" pathLength="1"/>
+        <line class="deco-draw" x1="9.5" y1="6" x2="12" y2="6" pathLength="1"/>
+        <line class="deco-draw" x1="6" y1="9.5" x2="6" y2="12" pathLength="1"/>
+        <line class="deco-draw" x1="0" y1="6" x2="2.5" y2="6" pathLength="1"/>
+      </svg>`;
+    document.querySelectorAll('.section-header, .section__title').forEach(el => {
+      el.setAttribute('data-deco', '');
+      el.appendChild(make(crosshair));
+    });
+
+    // Viewfinder corners over the portrait
+    const corners = `
+      <svg class="deco deco-corners" viewBox="0 0 100 100" aria-hidden="true">
+        <path class="deco-draw c-tl" d="M8 20 V8 H20" pathLength="1"/>
+        <path class="deco-draw c-tr" d="M80 8 H92 V20" pathLength="1"/>
+        <path class="deco-draw c-br" d="M92 80 V92 H80" pathLength="1"/>
+        <path class="deco-draw c-bl" d="M20 92 H8 V80" pathLength="1"/>
+      </svg>`;
+    document.querySelectorAll('.portrait').forEach(el => {
+      el.setAttribute('data-deco', '');
+      el.appendChild(make(corners));
+    });
+
+    // Bitstream divider above the footer
+    const stream = `
+      <svg class="deco deco-stream" viewBox="0 0 600 8" preserveAspectRatio="none" aria-hidden="true">
+        <line class="deco-stream__bits" x1="0" y1="4" x2="600" y2="4"/>
+        <line class="deco-stream__packets" x1="0" y1="4" x2="600" y2="4"/>
+      </svg>`;
+    document.querySelectorAll('.footer').forEach(el => {
+      el.insertBefore(make(stream), el.firstChild);
+    });
+
+    // Draw strokes in as their section scrolls into view
+    const targets = document.querySelectorAll('[data-deco]');
+    if ('IntersectionObserver' in window) {
+      const decoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-inview');
+            decoObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      targets.forEach(el => decoObserver.observe(el));
+    } else {
+      targets.forEach(el => el.classList.add('is-inview'));
+    }
+  }
+
+  injectDecorations();
+
 })();
